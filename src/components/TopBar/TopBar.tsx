@@ -23,7 +23,7 @@ const TopBar: React.FC<TopBarProps> = () => {
 				</li>
 				<li
 					onClick={handleClickONContact}
-					className='flex flex-col cursor-pointer relative min-w-[171px]'>
+					className='flex flex-col cursor-pointer relative min-w-[188px]'>
 					{contactNumber ? (
 						<>
 							<div className=' flex items-center gap-1'>
