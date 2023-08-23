@@ -1,3 +1,10 @@
+import TopBar from "@/components/TopBar/TopBar";
+
+
 export default function Home() {
-	return <main>PRIVET</main>;
+	return (
+		<main>
+			<TopBar />
+		</main>
+	);
 }
