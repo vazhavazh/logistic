@@ -61,15 +61,15 @@ body {
 .wave {
   background: url(https://cdn.kcak11.com/codepen_assets/wave_animation/wave.svg) repeat-x;
   position: absolute;
-  top: -160px;
+  top: -155px;
   width: 6400px;
-  height: 160px;
+  height: 155px;
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
 
 .wave:nth-of-type(2) {
-  top: -175px;
+  top: -160px;
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
@@ -93,4 +93,42 @@ body {
 }
 .endWave{
 	display:none;
+}
+
+
+.wrapper.four {
+    /* background-color: #9ba5b4;
+    font-size: 3rem; */
+   /* color: ; */
+	font-size: 80px;
+	color: rgba(56, 56, 56, 0.869);
+	font-weight: bold;
+}
+
+.four .type {
+    /* padding: 2rem 1rem; */
+    width: auto;
+    margin: auto;
+}
+
+.four h3 {
+    width: 13ch;
+	font-weight: bold;
+    border-right: 4px solid rgba(56, 56, 56, 0.869);
+    margin: 2rem auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
 }
