@@ -1,12 +1,14 @@
+import NavBar from "@/components/NavBar/NavBar";
 import TopBar from "@/components/TopBar/TopBar";
-import Ocean from "@/components/UI/Ocean/Ocean";
+import Wave from "@/components/UI/Wave/Wave";
+
 
 export default function Home() {
 	return (
-		<main >
+		<main>
 			<TopBar />
-			<Ocean />
-      <span>PRUV</span>
+			<Wave />
+			<NavBar />
 		</main>
 	);
 }

@@ -50,7 +50,7 @@ const TopBar: React.FC<TopBarProps> = () => {
 				</li>
 				<li className='flex items-center gap-1 cursor-pointer transition-all hover:scale-125'>
 					<MdAddIcCall className='text-white-main' />
-					<span className='text-white-main'>Замовити виклик</span>
+					<span className='text-white-main'>Ми вам передзвонемо</span>
 				</li>
 			</ul>
 		</div>

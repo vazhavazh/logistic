@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				"accent-color": "rgba(85, 85, 255, 0.71)",
+				"accent-color": "#015871",
 				"white-main": "#ffff",
 			},
 			keyframes: {
