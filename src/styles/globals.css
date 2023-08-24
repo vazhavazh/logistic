@@ -28,6 +28,7 @@ body {
 		transform: scale(2);
 		opacity: 1;
 		text-shadow: 3px 10px 5px rgba(238, 255, 0, 0.5);
+		
 	}
 	50% {
 		color: rgb(45, 255, 52);
@@ -93,16 +94,14 @@ body {
 }
 
 .wrapper.four {
-	/* background-color: #9ba5b4;
-    font-size: 3rem; */
-	/* color: ; */
+
 	font-size: 80px;
 	color: rgba(56, 56, 56, 0.869);
 	font-weight: bold;
 }
 
 .four .type {
-	/* padding: 2rem 1rem; */
+	
 	width: auto;
 	margin: auto;
 }
@@ -160,6 +159,40 @@ body {
 }
 
 
+
+
 .nav-link.active:after {
   transform: scaleX(1);
+}
+
+
+
+
+
+
+.nav-link2 {
+	display: inline-block;
+	text-decoration: none;
+	
+}
+
+.nav-link2:after {
+	display: block;
+	content: "";
+	width: inherit;
+	border-bottom: solid 3px white;
+	transform: scaleX(0);
+	transition: transform 250ms ease-in-out;
+}
+
+.nav-link2:hover:after {
+	transform: scaleX(1);
+}
+
+.nav-link2.from-left:after {
+	transform-origin: left;
+}
+
+.nav-link2.from-right:after {
+	transform-origin: right;
 }
