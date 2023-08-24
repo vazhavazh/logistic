@@ -5,7 +5,10 @@ module.exports = {
 		extend: {
 			colors: {
 				"accent-color": "#015871",
+				"main-gray": "rgba(56, 56, 56, 0.869)",
 				"white-main": "#ffff",
+				yellow: "rgb(252, 237, 31)",
+				
 			},
 			keyframes: {
 				rotate: {

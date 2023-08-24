@@ -7,7 +7,6 @@
 	padding: 0;
 	margin: 0;
 	font-family: "Roboto", sans-serif;
-	
 }
 body {
 	overflow: hidden;
@@ -44,91 +43,123 @@ body {
 	}
 }
 
-
-
-
-
-
 .ocean {
-  height: 5%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #015871;
+	height: 5%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #015871;
+	color: rgb(252, 237, 31);
 }
 
 .wave {
-  background: url(https://cdn.kcak11.com/codepen_assets/wave_animation/wave.svg) repeat-x;
-  position: absolute;
-  top: -155px;
-  width: 6400px;
-  height: 155px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
+	background: url(https://cdn.kcak11.com/codepen_assets/wave_animation/wave.svg)
+		repeat-x;
+	position: absolute;
+	top: -155px;
+	width: 6400px;
+	height: 155px;
+	animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+	transform: translate3d(0, 0, 0);
 }
 
 .wave:nth-of-type(2) {
-  top: -160px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
+	top: -160px;
+	animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+		swell 7s ease -1.25s infinite;
+	opacity: 1;
 }
 
 @keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
+	0% {
+		margin-left: 0;
+	}
+	100% {
+		margin-left: -1600px;
+	}
 }
 @keyframes swell {
-  0%,
+	0%,
 	100% {
-    transform: translate3d(0, -25px, 0);
-  }
-  50% {
-    transform: translate3d(0, 5px, 0);
-  }
+		transform: translate3d(0, -25px, 0);
+	}
+	50% {
+		transform: translate3d(0, 5px, 0);
+	}
 }
-.endWave{
-	display:none;
+.endWave {
+	display: none;
 }
-
 
 .wrapper.four {
-    /* background-color: #9ba5b4;
+	/* background-color: #9ba5b4;
     font-size: 3rem; */
-   /* color: ; */
+	/* color: ; */
 	font-size: 80px;
 	color: rgba(56, 56, 56, 0.869);
 	font-weight: bold;
 }
 
 .four .type {
-    /* padding: 2rem 1rem; */
-    width: auto;
-    margin: auto;
+	/* padding: 2rem 1rem; */
+	width: auto;
+	margin: auto;
 }
 
 .four h3 {
-    width: 13ch;
+	width: 13ch;
 	font-weight: bold;
-    border-right: 4px solid rgba(56, 56, 56, 0.869);
-    margin: 2rem auto;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+	border-right: 4px solid rgba(56, 56, 56, 0.869);
+	margin: 2rem auto;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 2s steps(13, end),
+		blink-caret 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
-    from {
-        width: 0;
-    }
+	from {
+		width: 0;
+	}
 }
 
 @keyframes blink-caret {
-    50% {
-        border-color: transparent;
-    }
+	50% {
+		border-color: transparent;
+	}
+}
+
+
+
+.nav-link {
+	display: inline-block;
+	text-decoration: none;
+	
+}
+
+.nav-link:after {
+	display: block;
+	content: "";
+	width: inherit;
+	border-bottom: solid 3px rgba(56, 56, 56, 0.869);
+	transform: scaleX(0);
+	transition: transform 250ms ease-in-out;
+}
+
+.nav-link:hover:after {
+	transform: scaleX(1);
+}
+
+.nav-link.from-left:after {
+	transform-origin: left;
+}
+
+.nav-link.from-right:after {
+	transform-origin: right;
+}
+
+
+.nav-link.active:after {
+  transform: scaleX(1);
 }
