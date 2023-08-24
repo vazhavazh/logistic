@@ -13,7 +13,7 @@ const NavBar: React.FC<NavBarProps> = () => {
 	};
 
 	return (
-		<nav className='bg-yellow flex px-20 py-8 justify-between text-2xl text-main-gray'>
+		<nav className='bg-yellow flex px-20 py-4 justify-between text-2xl text-main-gray'>
 			<Link href='/'>
 				<div className={`nav-link ${isLinkActive("/")}`}>
 					<span>Головна</span>
