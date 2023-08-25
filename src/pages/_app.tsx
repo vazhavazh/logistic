@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				<title>СТС Логістікс Україна</title>
 				<meta
 					name='description'
-					content='Сайт візитівка компанії СТС Логістікс Україна'
+					content='СТС Логістікс Україна'
 				/>
 				<meta
 					name='viewport'
