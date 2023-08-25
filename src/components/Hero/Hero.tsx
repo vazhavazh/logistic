@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import HeroBanner from "./HeroBanner/HeroBanner";
 
 type HeroProps = {};
 
 const Hero: React.FC<HeroProps> = () => {
 	return (
-		<div className='flex bg-accent-color2 p-6 text-white-main gap-20 text-xl  rounded-xl'>
+		<div className='flex bg-accent-color2 p-6 text-white-main gap-20 text-xl  rounded-xl mb-6 '>
 			<ul className='flex flex-col gap-9'>
 				<li>
 					<Link href='/'>
@@ -68,15 +69,17 @@ const Hero: React.FC<HeroProps> = () => {
 				</li>
 			</ul>
 
-			<div className='inline-block w-full max-h-[250px]'>
+			<div className='inline-block w-full max-h-[260px]'>
 				<Image
-					className='max-w-full max-h-[100%]'
+					className='max-h-[100%]'
 					width={920}
 					height={799}
 					src='/specEquip.png'
 					alt='specEquip'
 				/>
 			</div>
+
+			<HeroBanner />
 		</div>
 	);
 };

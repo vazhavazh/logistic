@@ -15,7 +15,7 @@ const TopBar: React.FC<TopBarProps> = () => {
 	};
 
 	return (
-		<div className='bg-accent-color py-8 pt-6 px-10'>
+		<div className='bg-accent-color py-8 pt-6 px-10 w-full'>
 			<ul className='w-full flex  items-center  justify-between text-lg'>
 				<li className='flex gap-1 items-center   text-center'>
 					<AiOutlineClockCircle className='text-white-main animate-rotate w-6 h-6' />
